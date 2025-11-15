@@ -5,7 +5,7 @@
   become: true
   tasks:
 
-  - name: install apache2 pack
+  - name: delete apache2 pack
     apt:
       name: apache2
-      state: latest
+      state: absent
